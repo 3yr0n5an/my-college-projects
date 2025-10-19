@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>إضافة تطبيق</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header class="header-3d">
+      <h1><span class="Z-style">Z</span>coAi</h1>
+      <nav class="nav">
+        <a href="home.html">الرئيسية</a>
+        <a href="AboutUs.html">من نحن</a>
+        <a href="apps.html">التطبيقات</a>
+        <a href="add_app.html">إضافة تطبيق</a>
+      </nav>
+    </header>
+
+    <main class="container card">
+      <form id="addAppForm" novalidate>
+        <div class="form-row">
+          <label>اسم التطبيق (بالإنجليزية، أحرف فقط، بدون فراغات):</label>
+          <input type="text" id="appName" required placeholder="ExampleApp" />
+          <small class="hint" id="errName"></small>
+        </div>
+
+        <div class="form-row">
+          <label>اسم الشركة المصنعة (بالإنجليزية أحرف فقط):</label>
+          <input
+            type="text"
+            id="company"
+            required
+            placeholder="ExampleCompany"
+          />
+          <small class="hint" id="errCompany"></small>
+        </div>
+
+        <div class="form-row">
+          <label>الموقع الإلكتروني (URL):</label>
+          <input type="url" id="url" placeholder="https://example.com" />
+          <small class="hint" id="errUrl"></small>
+        </div>
+
+        <div class="form-row">
+          <label>
+            <input type="checkbox" id="isFree" checked />
+            التطبيق مجاني
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>مجال الاستخدام:</label>
+          <select id="usage">
+            <option value="Robotics">Robotics</option>
+            <option value="Education">Education</option>
+            <option value="E-Commerce">E-Commerce</option>
+            <option value="AI-Tools">AI-Tools</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>شرح مختصر:</label>
+          <textarea
+            id="description"
+            rows="4"
+            placeholder="وصف مختصر"
+          ></textarea>
+        </div>
+
+        <div class="form-row">
+          <label>رابط صورة/لوجو (اختياري):</label>
+          <input type="url" id="logo" placeholder="https://..." />
+        </div>
+
+        <div class="form-row">
+          <label>رابط ملف صوتي أو فيديو (اختياري):</label>
+          <input type="url" id="media" placeholder="https://..." />
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="submit">إرسال</button>
+          <button  class="btn" id="resetBtn" type="button">إعادة</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer card">
+      <p>© ZcoAi</p>
+    </footer>
+
+    <script src="myFunctions.js"></script>
+  </body>
+</html>

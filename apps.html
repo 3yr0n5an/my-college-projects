@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>التطبيقات</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header class="header-3d">
+      <h1><span class="Z-style">Z</span>coAi</h1>
+      <nav class="nav">
+        <a href="home.html">الرئيسية</a>
+        <a href="AboutUs.html">من نحن</a>
+        <a href="apps.html">التطبيقات</a>
+        <a href="add_app.html">إضافة تطبيق</a>
+      </nav>
+    </header>
+
+    <main class="container card">
+      <table class="apps-table" id="appsTable" aria-describedby="appsDesc">
+        <caption id="appsDesc">
+          جدول معلومات التطبيقات
+        </caption>
+        <thead>
+          <tr>
+            <th>اسم التطبيق</th>
+            <th>اسم الشركة المصنعة</th>
+            <th>مجال الاستخدام</th>
+            <th>مجاناً؟</th>
+            <th>إظهار التفاصيل</th>
+          </tr>
+        </thead>
+        <tbody id="appsBody"></tbody>
+      </table>
+
+      <button class="btn">إضافة تطبيق جديد</button>
+    </main>
+
+    <footer class="footer card">
+      <p>© ZcoAi</p>
+    </footer>
+
+    <script src="myFunctions.js"></script>
+  </body>
+</html>
